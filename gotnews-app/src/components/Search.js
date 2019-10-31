@@ -8,6 +8,17 @@ class Search extends Component {
     render(){
         return(
             <div>
+                <form onSubmit ={this.handleSubmit}>
+                <input
+                onChange = {this.handleSearch}
+                type = 'text'
+                placeholder = 'Search'
+                />
+                <input
+                type = 'submit'
+                value = 'Submit'
+                />
+                </form>
             </div>
         )
     }
