@@ -7,6 +7,10 @@ class Search extends Component {
             value: ''
         }
     }
+    
+    handleSearch =(e) =>{
+        this.setState({value: e.target.value})
+    }
 
     render(){
         return(
