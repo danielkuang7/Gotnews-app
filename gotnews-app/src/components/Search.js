@@ -12,6 +12,11 @@ class Search extends Component {
         this.setState({value: e.target.value})
     }
 
+    handleSubmit(e){
+        e.preventDefault()
+        this.props.submit(this.state.value)
+    }
+
     render(){
         return(
             <div>
