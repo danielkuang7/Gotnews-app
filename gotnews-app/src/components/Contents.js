@@ -5,6 +5,11 @@ class Contents extends Component{
         super(props)
 
     }
+    getContents(){
+        return this.props.news.map(element=>
+        <div>
+        </div>)
+    }
 
     render (){
         return(
