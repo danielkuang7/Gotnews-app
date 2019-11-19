@@ -15,3 +15,7 @@
 .titles{
   color: white;
 }
+
+.image{
+  object-fit: scale-down;
+}
