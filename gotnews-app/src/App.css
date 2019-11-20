@@ -19,3 +19,11 @@
 .image{
   object-fit: scale-down;
 }
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+}
