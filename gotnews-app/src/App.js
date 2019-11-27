@@ -5,7 +5,15 @@ import Search from './components/Search';
 import Contents from './components/Contents';
 import Footer from './components/Footer';
 
-function App() {
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      news: []
+    };
+  };
+
+render() {
   return (
     <div className="App">
     <Header />
@@ -14,6 +22,7 @@ function App() {
     <Footer />
     </div>
   );
+ }
 }
 
 export default App;
