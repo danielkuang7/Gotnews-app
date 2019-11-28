@@ -13,6 +13,15 @@ class App extends Component {
     };
   };
 
+  getApi(userInput){
+    let endpoint = `https://newsapi.org/v2/everything?q=${userInput}&apiKey=68ffa4b23c77482d84a39a32d65858dd`
+    fetch(endpoint)
+    .then(response => response.json())
+    .then(jsonData =>{
+      this.setState({news: jsonData.articles})
+    });
+  };
+
 render() {
   return (
     <div className="App">
