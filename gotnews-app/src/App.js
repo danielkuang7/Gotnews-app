@@ -22,6 +22,11 @@ class App extends Component {
     });
   };
 
+  handleSubmit(userInput){
+    this.getApi(userInput)
+  };
+
+
 render() {
   return (
     <div className="App">
