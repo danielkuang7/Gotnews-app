@@ -11,6 +11,7 @@ class App extends Component {
     this.state = {
       news: []
     };
+    this.handleSubmit = this.handleSubmit.bind(this)
   };
 
   getApi(userInput){
