@@ -6,6 +6,7 @@ class Search extends Component {
         this.state={
             value: ''
         }
+        this.handleSearch = this.handleSearch.bind(this);
     }
     
     handleSearch =(e) =>{
