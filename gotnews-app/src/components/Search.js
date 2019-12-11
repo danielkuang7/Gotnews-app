@@ -7,6 +7,7 @@ class Search extends Component {
             value: ''
         }
         this.handleSearch = this.handleSearch.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     handleSearch =(e) =>{
